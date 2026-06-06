@@ -20,6 +20,7 @@ export default function AnalysisSession({
   onPhaseChange: (phase: number) => void;
 }) {
   const [phase, setPhase] = useState(0);
+  const [decisionCount, setDecisionCount] = useState(1);
   const [patternAnswer, setPatternAnswer] = useState<string | null>(null);
   const [applyClicked, setApplyClicked] = useState(false);
   const [criteriaOpen, setCriteriaOpen] = useState(false);
@@ -42,6 +43,17 @@ export default function AnalysisSession({
     setApplyClicked(true);
     setPhase(3);
     onPhaseChange(3);
+  }
+
+  function handleNewDecision() {
+    setPhase(0);
+    setPatternAnswer(null);
+    setApplyClicked(false);
+    setCriteriaOpen(false);
+    setRouteOwnersOpen(false);
+    setInputExpanded(true);
+    setDecisionCount((c) => c + 1);
+    onPhaseChange(0);
   }
 
   const branchBeforeAfter: Array<{ label: string; before: string; after: string }> = primaryBranchIds.map((id) => ({
@@ -69,7 +81,7 @@ export default function AnalysisSession({
             <>
               {/* Section 1 — Session Status */}
               <div style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 13, color: "var(--ink-mid)", marginBottom: 32 }}>
-                <span style={{ fontWeight: 400 }}>Decision Session</span>
+                <span style={{ fontWeight: 400 }}>Decision Session #{decisionCount}</span>
                 <span style={{ color: "var(--ink-faint)" }}>·</span>
                 <span style={{ width: 5, height: 5, borderRadius: "50%", background: "var(--amber)", display: "inline-block" }} />
                 <span>Signal Overload</span>
@@ -313,7 +325,25 @@ export default function AnalysisSession({
                         <span style={{ width: 10, height: 10, borderRadius: "50%", background: "var(--green)", display: "inline-block" }} />
                         <span style={{ fontFamily: "var(--font-serif)", fontSize: 20, letterSpacing: "-0.01em" }}>Decision saved.</span>
                       </div>
-                      <div style={{ fontSize: 15, color: "var(--ink-mid)" }}>Nico's system updated.</div>
+                      <div style={{ fontSize: 15, color: "var(--ink-mid)", marginBottom: 16 }}>Nico's system updated.</div>
+                      <button
+                        onClick={handleNewDecision}
+                        style={{
+                          padding: "10px 24px",
+                          background: "var(--cream)",
+                          color: "var(--ink)",
+                          border: "1px solid var(--border)",
+                          borderRadius: 12,
+                          fontSize: 14,
+                          fontWeight: 400,
+                          cursor: "pointer",
+                          fontFamily: "var(--font-serif)",
+                          letterSpacing: "-0.01em",
+                          minHeight: 40,
+                        }}
+                      >
+                        New decision
+                      </button>
                     </div>
                   )}
                 </div>
@@ -326,8 +356,14 @@ export default function AnalysisSession({
         <div style={{ marginTop: "auto", borderTop: "1px solid var(--border-light)", padding: "16px 32px", flexShrink: 0, background: "var(--cream)" }}>
           {phase === 0 ? (
             <>
+              {decisionCount > 1 && (
+                <div style={{ display: "flex", gap: 8, marginBottom: 10, fontSize: 12, color: "var(--ink-light)" }}>
+                  <span style={{ color: "var(--ink-mid)" }}>←</span>
+                  <span>Previous: <em>{demoDecision.decision}</em></span>
+                </div>
+              )}
               <div style={{ display: "flex", gap: 8, marginBottom: 12 }}>
-                <span style={{ fontSize: 11, color: "var(--ink-light)", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 400 }}>Input</span>
+                <span style={{ fontSize: 11, color: "var(--ink-light)", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 400 }}>Decision #{decisionCount} · Input</span>
               </div>
               <textarea
                 style={{
@@ -383,7 +419,7 @@ export default function AnalysisSession({
               onClick={() => setInputExpanded(!inputExpanded)}
             >
               <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: inputExpanded ? 8 : 0 }}>
-                <span style={{ fontSize: 11, color: "var(--ink-light)", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 400 }}>Input source</span>
+                <span style={{ fontSize: 11, color: "var(--ink-light)", letterSpacing: "0.1em", textTransform: "uppercase", fontWeight: 400 }}>Decision #{decisionCount} · Input source</span>
                 <span style={{ fontSize: 12, color: "var(--ink-mid)", textDecoration: "underline", textUnderlineOffset: 2 }}>
                   {inputExpanded ? "Collapse" : "Expand"}
                 </span>
