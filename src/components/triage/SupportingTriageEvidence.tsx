@@ -16,22 +16,43 @@ export function SupportingTriageEvidence({ result }: SupportingTriageEvidencePro
   );
 
   return (
-    <article className="rounded-[2rem] border border-stone-200 bg-[#fffaf0] p-5 shadow-xl shadow-stone-300/30 sm:p-7">
+    <article className="rounded-2xl border border-slate-200 bg-white p-5 sm:p-7">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="text-xs font-black uppercase tracking-[0.24em] text-orange-600">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
             Supporting triage evidence
           </p>
-          <h2 className="mt-2 text-3xl font-black tracking-tight">
-            Why this reset?
+          <h2 className="mt-2 text-2xl font-semibold tracking-tight text-slate-950">
+            Why this recommendation?
           </h2>
         </div>
-        <span className="rounded-full bg-stone-950 px-3 py-1 text-xs font-black text-orange-200">
+        <span className="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-semibold text-slate-600">
           {result.source === "live_ai" ? "Live AI" : "Fallback demo"}
         </span>
       </div>
 
-      <div className="mt-5 space-y-4">
+      <div className="mt-5 grid gap-2 text-sm sm:grid-cols-5">
+        {[
+          ["Product", "Act now"],
+          ["Team", "Freeze scope"],
+          ["Market", "Defer"],
+          ["Investor", "Monitor"],
+          ["State", "Decision risk"],
+        ].map(([label, value]) => (
+          <div className="rounded-xl border border-slate-200 bg-slate-50 p-3" key={label}>
+            <p className="text-[0.65rem] font-semibold uppercase tracking-[0.12em] text-slate-500">
+              {label}
+            </p>
+            <p className="mt-1 font-semibold text-slate-800">{value}</p>
+          </div>
+        ))}
+      </div>
+
+      <details className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-4">
+        <summary className="cursor-pointer text-sm font-semibold text-slate-800">
+          Show classified signals
+        </summary>
+        <div className="mt-4 space-y-4">
         {triageGroups.map((group) => {
           const groupedSignals = result.signals.filter((signal) =>
             group.priorities.includes(signal.priority),
@@ -39,37 +60,37 @@ export function SupportingTriageEvidence({ result }: SupportingTriageEvidencePro
 
           return (
             <section
-              className="rounded-3xl border border-stone-200 bg-white/70 p-4"
+              className="rounded-xl border border-slate-200 bg-white p-4"
               key={group.label}
             >
               <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="text-lg font-black">{group.label}</h3>
-                <p className="text-xs font-bold text-stone-500">
+                <h3 className="text-lg font-semibold text-slate-950">{group.label}</h3>
+                <p className="text-xs text-slate-500">
                   {group.description}
                 </p>
               </div>
               <div className="mt-3 space-y-2">
                 {groupedSignals.map((signal) => (
                   <div
-                    className="rounded-2xl border border-stone-200 bg-[#fffaf0] p-3"
+                    className="rounded-xl border border-slate-200 bg-slate-50 p-3"
                     key={`${signal.category}-${signal.description}`}
                   >
                     <div className="flex flex-wrap items-center gap-2">
                       <span
-                        className={`rounded-full border px-2.5 py-1 text-[0.68rem] font-black ${categoryStyles[signal.category]}`}
+                        className={`rounded-full border px-2.5 py-1 text-[0.68rem] font-semibold ${categoryStyles[signal.category]}`}
                       >
                         {signal.category}
                       </span>
                       <span
-                        className={`rounded-full px-2.5 py-1 text-[0.68rem] font-black ${priorityStyles[signal.priority]}`}
+                        className={`rounded-full px-2.5 py-1 text-[0.68rem] font-semibold ${priorityStyles[signal.priority]}`}
                       >
                         {priorityLabels[signal.priority]}
                       </span>
                     </div>
-                    <p className="mt-2 text-sm font-black leading-6">
+                    <p className="mt-2 text-sm font-semibold leading-6 text-slate-950">
                       {signal.description}
                     </p>
-                    <p className="mt-1 text-xs leading-5 text-stone-600">
+                    <p className="mt-1 text-xs leading-5 text-slate-600">
                       {signal.reason}
                     </p>
                   </div>
@@ -79,15 +100,15 @@ export function SupportingTriageEvidence({ result }: SupportingTriageEvidencePro
           );
         })}
 
-        <section className="rounded-3xl border border-orange-200 bg-orange-50 p-4">
-          <h3 className="text-lg font-black">Decision Risk</h3>
-          <p className="mt-1 text-xs font-bold leading-5 text-orange-900">
+        <section className="rounded-xl border border-amber-200 bg-amber-50 p-4">
+          <h3 className="text-lg font-semibold text-slate-950">Decision Risk</h3>
+          <p className="mt-1 text-xs leading-5 text-amber-900">
             Real signals where founder state may amplify the reaction.
           </p>
           <div className="mt-3 space-y-2">
             {decisionRiskSignals.map((signal, index) => (
               <p
-                className="rounded-2xl bg-white/80 p-3 text-sm font-bold leading-6 text-orange-950"
+                className="rounded-xl bg-white p-3 text-sm leading-6 text-amber-950"
                 key={`risk-${signal.category}-${signal.description}-${index}`}
               >
                 {signal.category}: {signal.description}
@@ -95,7 +116,8 @@ export function SupportingTriageEvidence({ result }: SupportingTriageEvidencePro
             ))}
           </div>
         </section>
-      </div>
+        </div>
+      </details>
     </article>
   );
 }

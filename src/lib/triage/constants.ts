@@ -1,12 +1,12 @@
 import type { Priority, SignalCategory, TriageGroup } from "./types";
 
 export const categoryStyles: Record<SignalCategory, string> = {
-  Product: "bg-blue-100 text-blue-900 border-blue-200",
-  Market: "bg-purple-100 text-purple-900 border-purple-200",
-  Investor: "bg-emerald-100 text-emerald-900 border-emerald-200",
-  Team: "bg-pink-100 text-pink-900 border-pink-200",
-  Execution: "bg-stone-200 text-stone-950 border-stone-300",
-  "Founder State": "bg-orange-100 text-orange-950 border-orange-200",
+  Product: "bg-blue-50 text-blue-700 border-blue-100",
+  Market: "bg-violet-50 text-violet-700 border-violet-100",
+  Investor: "bg-emerald-50 text-emerald-700 border-emerald-100",
+  Team: "bg-fuchsia-50 text-fuchsia-700 border-fuchsia-100",
+  Execution: "bg-slate-100 text-slate-700 border-slate-200",
+  "Founder State": "bg-amber-50 text-amber-700 border-amber-100",
 };
 
 export const priorityLabels: Record<Priority, string> = {
@@ -17,10 +17,10 @@ export const priorityLabels: Record<Priority, string> = {
 };
 
 export const priorityStyles: Record<Priority, string> = {
-  act_now: "bg-red-500 text-white",
-  monitor: "bg-yellow-300 text-stone-950",
-  defer: "bg-stone-800 text-white",
-  ignore: "bg-stone-200 text-stone-700",
+  act_now: "bg-rose-50 text-rose-700 ring-1 ring-rose-100",
+  monitor: "bg-amber-50 text-amber-700 ring-1 ring-amber-100",
+  defer: "bg-slate-100 text-slate-700 ring-1 ring-slate-200",
+  ignore: "bg-slate-50 text-slate-500 ring-1 ring-slate-200",
 };
 
 export const triageGroups: TriageGroup[] = [

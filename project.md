@@ -216,6 +216,77 @@ Core loop:
 trigger -> founder state -> decision -> action -> outcome -> pattern memory -> future priority reset
 ```
 
+Calibration loop:
+
+```txt
+expert default framework -> founder operating profile -> signal triage -> pattern hypothesis -> founder confirmation -> outcome validation -> operating rule
+```
+
+## Founder Operating Framework
+
+Founder OS should not tell founders who they are. It should help founders build, calibrate, and run their own judgment system.
+
+Default framework:
+
+- Signal reaction patterns: competitor-triggered pivot impulse, investor silence anxiety, negative user feedback spiral, advisor opinion over-weighting, positive feedback overconfidence, market report scope expansion.
+- Decision style patterns: over-analysis before reversible decisions, premature commitment under excitement, avoidance of uncomfortable stakeholder decisions, perfectionism before public release, low tolerance for ambiguity, over-indexing on external validation.
+- Execution patterns: scope creep near deadline, starting new work before closing the current loop, polishing instead of shipping, delaying delegation, doing low-leverage work personally, reopening decisions after they were already made.
+- Founder state patterns: sleep-deprived strategic doubt, anxious fundraising reaction, excitement-driven expansion, fatigue-driven meaning collapse, rejection-triggered repositioning, pressure-driven control tightening.
+- Ownership patterns: founder bottleneck, delegation resistance, agent distrust, excessive review ownership, unclear decision rights, team decision dependency.
+
+Founder Operating Profile v1:
+
+- Current stage.
+- North Star.
+- High-risk decision zones.
+- Common triggers.
+- Decision style.
+- Default intervention style.
+- Decisions founder must own.
+- Decisions system can route away.
+- Initial pattern hypotheses.
+
+Pattern maturity:
+
+| Stage | Condition | System voice |
+| --- | --- | --- |
+| Default | No or little history | "This may be..." |
+| Hypothesis | 2 similar triggers and 1 founder confirmation | "A possible pattern is emerging..." |
+| Validated | 3 similar triggers, 2 confirmations, and 1 recorded outcome | "This is a validated pattern..." |
+| Operating Rule | Founder explicitly approves rule conversion | "Apply rule..." |
+
+Pattern maturity is not simple data volume. It is recurrence plus founder confirmation plus outcome evidence plus decision impact.
+
+Product principle:
+
+> Patterns are hypotheses until the founder confirms them and outcomes validate them.
+
+Demo profile:
+
+```txt
+Founder Operating Profile v1
+Stage: MVP validation
+North Star: Validate onboarding clarity and first paid use case
+High-risk pattern: competitor-triggered pivot impulse
+Decision style: fast to react to external validation signals
+Intervention style: challenge premature pivots and protect focus
+Standing rule: no roadmap decision while exhausted or before user evidence is checked
+Pattern maturity: Validated
+```
+
+Demo recommendation:
+
+> Based on your current North Star and validated competitor-triggered pivot pattern, this is not a pivot moment. It is an onboarding validation and scope-control moment.
+
+Guardrails:
+
+- Do not use personality labels.
+- Do not say "you are an avoidant founder" or "you are a reactive founder."
+- Say "this resembles a possible operating pattern" or "this is a validated decision pattern."
+- Every pattern must be editable, confirmable, rejectable, mergeable, splittable, and eventually convertible into a rule.
+- Patterns should connect to outcomes, not only self-description.
+- The goal is not insight for its own sake. The goal is converting repeated decision history into operating rules.
+
 Key product principle:
 
 > Decision history becomes input for future prioritization.

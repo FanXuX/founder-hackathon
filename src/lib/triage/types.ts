@@ -36,6 +36,27 @@ export type DecisionLoop = {
   outcome: string;
 };
 
+export type DecisionRecord = DecisionLoop & {
+  id: string;
+  date: string;
+  patternName: string;
+  evaluation: "correct" | "costly" | "unknown";
+};
+
+export type PatternMaturity = "Default" | "Hypothesis" | "Validated" | "Operating Rule";
+
+export type FounderOperatingProfile = {
+  version: string;
+  stage: string;
+  northStar: string;
+  highRiskPattern: string;
+  decisionStyle: string;
+  interventionStyle: string;
+  standingRule: string;
+  patternMaturity: PatternMaturity;
+  maturityReason: string;
+};
+
 export type TriageGroup = {
   label: string;
   description: string;

@@ -1,8 +1,13 @@
 import { NextResponse } from "next/server";
 import { fallbackResult } from "@/lib/triage/fallback-result";
+import { defaultFounderProfile } from "@/lib/triage/founder-profile";
 import { normalizeResult } from "@/lib/triage/normalize";
 import { systemPrompt } from "@/lib/triage/prompt";
-import type { TriageResult } from "@/lib/triage/types";
+import type {
+  DecisionRecord,
+  FounderOperatingProfile,
+  TriageResult,
+} from "@/lib/triage/types";
 
 const seedHistory = fallbackResult.history;
 
@@ -33,7 +38,11 @@ function getAiProviderConfig(): AiProviderConfig | null {
 }
 
 export async function POST(request: Request) {
-  const { input } = (await request.json()) as { input?: string };
+  const { founderProfile, input, history } = (await request.json()) as {
+    founderProfile?: FounderOperatingProfile;
+    input?: string;
+    history?: DecisionRecord[];
+  };
 
   if (!input?.trim()) {
     return NextResponse.json(
@@ -43,6 +52,16 @@ export async function POST(request: Request) {
   }
 
   const providerConfig = getAiProviderConfig();
+  const profile = founderProfile ?? defaultFounderProfile;
+  const userHistory = history?.length
+    ? history.map((record) => ({
+        date: record.date,
+        trigger: record.trigger,
+        reaction: record.decision,
+        outcome: `${record.action} -> ${record.evaluation}`,
+      }))
+    : [];
+  const triageHistory = [...seedHistory, ...userHistory].slice(-12);
 
   if (!providerConfig?.apiKey) {
     return NextResponse.json(fallbackResult);
@@ -64,8 +83,9 @@ export async function POST(request: Request) {
             role: "user",
             content: JSON.stringify({
               today: new Date().toISOString().slice(0, 10),
+              founder_profile: profile,
               founder_input: input,
-              seed_history: seedHistory,
+              seed_history: triageHistory,
             }),
           },
         ],
