@@ -20,6 +20,7 @@ export default function AnalysisSession({
   const [routeOpen, setRouteOpen] = useState(false);
   const [guardrailEditing, setGuardrailEditing] = useState(false);
   const [dockCollapsed, setDockCollapsed] = useState(false);
+  const [inputText, setInputText] = useState(defaultDemoInput);
 
   const b = demoDecision;
 
@@ -380,7 +381,7 @@ export default function AnalysisSession({
 
             {dockCollapsed && !thinking && genCount > 0 && (
               <div style={{ padding: "0 20px 14px", fontSize: 14, color: "var(--ink-light)", fontWeight: 300, lineHeight: 1.5 }}>
-                {defaultDemoInput.replace(/\s+/g, " ").trim().slice(0, 80) + " … " + defaultDemoInput.replace(/\s+/g, " ").trim().slice(-30)}
+                {inputText.replace(/\s+/g, " ").trim().slice(0, 80) + " … " + inputText.replace(/\s+/g, " ").trim().slice(-30)}
               </div>
             )}
 
@@ -407,8 +408,8 @@ export default function AnalysisSession({
                         minHeight: 150,
                         fontWeight: 300,
                       }}
-                      defaultValue={defaultDemoInput}
-                      readOnly
+                      value={inputText}
+                      onChange={(e) => setInputText(e.target.value)}
                     />
                     <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 8 }}>
                       <button
