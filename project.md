@@ -8,11 +8,11 @@ Founder Signal Triage
 
 Product vision:
 
-We are building Founder OS: an AI operating layer for early-stage founders.
+We are building Founder OS: a decision clarity layer for early-stage founders under signal overload.
 
 Hackathon wedge:
 
-Founder Signal Triage helps founders decide what deserves to become work right now.
+Founder Signal Triage is the first wedge. It helps founders decide what deserves to become work right now.
 
 One-line product definition:
 
@@ -21,6 +21,10 @@ One-line product definition:
 Pitch line:
 
 > Every founder has pulled the same fire alarm before. Founder Signal Triage is the system that remembers, so this time you decide instead of react.
+
+Most compressed positioning:
+
+> Founder OS helps early-stage founders decide what deserves to become work, using their own decision history to protect judgment under signal overload.
 
 Target user:
 
@@ -40,6 +44,10 @@ Refined positioning:
 
 > We are not solving task management. We are helping founders keep judgment under signal noise.
 
+Final positioning:
+
+> Founder OS is not another workspace, task manager, or AI coach. It starts as a decision clarity layer for solo and small-team early-stage founders operating under signal overload.
+
 Product category:
 
 Founder decision intelligence / pre-task decision triage.
@@ -47,6 +55,15 @@ Founder decision intelligence / pre-task decision triage.
 Long-term vision:
 
 Founder OS can become the decision and focus layer above existing tools. Notion, Linear, CRMs, calendars, BI tools, and AI assistants remain systems of record or execution tools. Founder OS becomes the layer that decides what deserves founder attention, what can be delegated, and what should not become work.
+
+Strategic frame:
+
+```txt
+A is the wedge: Decision Clarity OS.
+B is the architecture: Agentic Operating Layer.
+```
+
+For the hackathon, pitch A. Mention B only as the long-term direction.
 
 ## Founder Pain Points
 
@@ -65,6 +82,10 @@ Founder OS can become the decision and focus layer above existing tools. Notion,
 Core pain statement:
 
 > Early founders do not lack information or tools. They lack a system that protects their judgment when signals, pressure, and founder state collide.
+
+Sharper pain statement:
+
+> Early-stage founders do not lack tools. They lack decision clarity under signal overload.
 
 What this means:
 
@@ -189,6 +210,32 @@ Long-term moat:
 - Ownership rules for founder, team, and agents.
 - Feedback loop from decision -> execution -> outcome -> future triage.
 
+Core loop:
+
+```txt
+trigger -> founder state -> decision -> action -> outcome -> pattern memory -> future priority reset
+```
+
+Key product principle:
+
+> Decision history becomes input for future prioritization.
+
+Competitive claim:
+
+> Existing Founder OS products are mostly workspaces, templates, CRM layers, or decision archives. They help founders organize work, but they do not continuously improve the founder's decision loop.
+
+Strongest competitive line:
+
+> No tool truly owns the decision -> execution -> feedback -> learning loop for the founder seat.
+
+Taskade response:
+
+> Taskade manages work. Founder OS protects the founder's decision layer.
+
+Decision Ledger response:
+
+> Decision Ledger stores decisions. Founder OS uses decision memory to drive today's operating behavior.
+
 ## Investor Trend Fit
 
 ### YC Fit
@@ -204,6 +251,10 @@ Founder Signal Triage can be framed as:
 Long-term YC-compatible narrative:
 
 > We are building an AI-native operations partner for early founders, starting with the highest-leverage bottleneck: what deserves founder attention right now?
+
+Why now:
+
+> AI made founders more powerful, but also more overloaded. The bottleneck moved upstream: not execution, but deciding what deserves execution.
 
 ### a16z Fit
 
@@ -544,6 +595,12 @@ Pattern memory is the core differentiator.
 
 The system should use pre-seeded founder history to detect repeated decision patterns.
 
+Pattern memory is not AI remembering chat history. It is the system remembering structured decision history:
+
+```txt
+trigger -> state -> decision -> action -> outcome -> pattern
+```
+
 Example:
 
 ```txt
@@ -579,6 +636,10 @@ Validate onboarding confusion with 3 users and freeze demo scope. No pivot decis
 ```
 
 This must be singular. Do not output 5 priorities.
+
+Strong demo output:
+
+> This is not a pivot moment. It is a scope-control and onboarding-validation moment.
 
 ## Next Actions
 
