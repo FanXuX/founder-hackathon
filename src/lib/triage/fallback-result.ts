@@ -1,79 +1,86 @@
 import type { TriageResult } from "./types";
 
-export const demoInput =
-  "Investor A didn't reply for a week. Two users said onboarding is confusing. A competitor just launched an AI workflow feature. My teammate wants to add a dashboard before demo day. I'm exhausted but feel like we might need to pivot.";
-
 export const fallbackResult: TriageResult = {
   source: "fallback",
-  patternName: "Competitor-triggered pivot impulse",
+  founderModelName: "The Visionary Builder",
+  intervention:
+    "This is a proof-protection moment, not a vision-expansion moment.",
+  patternName: "Vision Pressure -> Scope Expansion",
   patternSummary:
-    "Competitor activity has triggered a pivot impulse 3 times before. The system is warning you before that reaction becomes roadmap work.",
+    "Large external signals are pulling the founder toward broader roadmap and positioning moves before the current wedge is proven.",
   memoryInsight:
-    "When competitors or advisors challenge direction, you tend to question positioning before checking user evidence.",
+    "When competitor movement, investor uncertainty, and exhaustion arrive together, Nico's Visionary Builder mode can turn pressure into scope before user evidence is checked.",
   decisionRisk: "High",
-  decisionRiskReason: "Real market signal plus exhausted founder state.",
+  decisionRiskReason:
+    "Competitor news and investor silence are real signals, but exhaustion may amplify them into a roadmap-expansion reaction.",
   topPriority:
-    "This is not a pivot moment. It is a scope-control and onboarding-validation moment.",
+    "Validate the onboarding problem with users and freeze demo scope before making any roadmap expansion decision.",
   priorityRationale:
-    "Competitor news is a real signal, but the highest-evidence work is validating onboarding confusion and protecting demo scope.",
+    "The operating anchor is to prove the current wedge. Competitor and investor signals should be monitored, but they should not become work until user evidence confirms the wedge is too small.",
+  doNotBecomeWorkToday: [
+    "Do not pivot because of competitor news.",
+    "Do not add the dashboard before demo day.",
+    "Do not rewrite the roadmap while exhausted.",
+    "Do not treat investor silence as proof the wedge is too small.",
+  ],
   signals: [
     {
       category: "Product",
       description: "Two users said onboarding is confusing.",
       priority: "act_now",
-      reason: "Repeated user friction blocks activation and demo clarity.",
-    },
-    {
-      category: "Team",
-      description: "Teammate wants to add a dashboard before demo day.",
-      priority: "act_now",
-      reason: "Scope creep can reduce shipping quality before the deadline.",
+      reason: "This is direct validation evidence for the current wedge and should become work now.",
     },
     {
       category: "Execution",
-      description: "Demo day creates a delivery deadline risk.",
+      description: "Demo day pressure makes scope control urgent.",
       priority: "act_now",
-      reason: "The product must prove one core flow, not add surface area.",
+      reason: "The current proof window is narrow, so execution reality should constrain new work.",
     },
     {
       category: "Investor",
       description: "Investor A has not replied for a week.",
       priority: "monitor",
-      reason: "Worth following up, but it should not reset strategy today.",
+      reason: "Investor silence is a real fundraising signal, but not proof that the product wedge is wrong.",
     },
     {
       category: "Market",
-      description: "Competitor launched an AI workflow feature.",
+      description: "A competitor launched an AI workflow feature.",
       priority: "defer",
-      reason: "Real market signal, but not enough evidence for a pivot.",
+      reason: "Real market signal, not a command to pivot or expand roadmap today.",
       stateAmplified: true,
     },
     {
+      category: "Team",
+      description: "A teammate wants to add a dashboard before demo day.",
+      priority: "defer",
+      reason: "Dashboard work should stay parked until the current onboarding proof is addressed.",
+    },
+    {
       category: "Founder State",
-      description: "Exhaustion plus pivot impulse.",
-      priority: "monitor",
-      reason: "Decision-quality risk: current state may amplify reaction.",
+      description: "Nico is exhausted but feels like the company may need to pivot.",
+      priority: "defer",
+      reason: "Exhaustion can convert real pressure into scope expansion. Do not make roadmap decisions from this state.",
       stateAmplified: true,
     },
   ],
   history: [
     {
       date: "Jan 12",
-      trigger: "Competitor launched",
-      reaction: "Considered pivot",
-      outcome: "Stayed course, correct",
+      trigger: "Competitor launched a broader workflow feature",
+      reaction: "Considered repositioning before checking user evidence",
+      outcome: "Stayed focused on onboarding proof, correct",
     },
     {
       date: "Mar 18",
-      trigger: "Market report",
-      reaction: "Expanded roadmap",
-      outcome: "Cut back after 5 days, costly",
+      trigger: "Advisor pushed for a bigger platform story",
+      reaction: "Expanded roadmap for five days",
+      outcome: "Cut scope back after demo risk increased, costly",
     },
     {
       date: "May 08",
-      trigger: "Advisor suggested enterprise pivot",
-      reaction: "Checked evidence first",
-      outcome: "SMB direction stayed correct",
+      trigger: "Team asked to add dashboard before a deadline",
+      reaction: "Deferred dashboard and protected the validation sprint",
+      outcome: "Core user proof improved",
     },
   ],
   nextActions: [
@@ -82,23 +89,23 @@ export const fallbackResult: TriageResult = {
       timing: "today",
     },
     {
-      action: "Tell teammate the dashboard is deferred until after demo",
+      action: "Tell the team the dashboard is deferred until after demo",
       timing: "today",
     },
     {
-      action: "Send Investor A a short follow-up",
+      action: "Send one investor follow-up without changing roadmap",
       timing: "tomorrow",
     },
     {
-      action: "No roadmap decision while exhausted",
+      action: "No roadmap expansion while exhausted",
       timing: "standing rule",
     },
   ],
   decisionLoop: {
-    trigger: "Competitor launch plus user onboarding feedback",
-    state: "Exhausted, under demo deadline pressure",
-    decision: "Do not pivot today",
-    action: "Validate onboarding and freeze scope",
-    outcome: "Protect execution momentum while checking real user evidence",
+    trigger: "Competitor launch plus investor silence plus demo scope request",
+    state: "Exhausted Visionary Builder mode turns pressure into expansion urgency",
+    decision: "Freeze roadmap expansion and protect current wedge proof",
+    action: "Validate onboarding and defer dashboard/pivot work",
+    outcome: "Current proof improves while vision expansion stays parked",
   },
 };

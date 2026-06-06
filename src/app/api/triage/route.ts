@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 import { fallbackResult } from "@/lib/triage/fallback-result";
-import { defaultFounderProfile } from "@/lib/triage/founder-profile";
+import {
+  defaultFounderProfile,
+  founderJudgmentModels,
+} from "@/lib/triage/founder-profile";
 import { normalizeResult } from "@/lib/triage/normalize";
 import { systemPrompt } from "@/lib/triage/prompt";
 import type {
@@ -83,9 +86,14 @@ export async function POST(request: Request) {
             role: "user",
             content: JSON.stringify({
               today: new Date().toISOString().slice(0, 10),
+              task:
+                "Produce a founder judgment intervention grounded in current input, selected founder model, guardrails, and relevant history. Do not generate generic advice or pretend unsupported memory exists.",
+              founder_model_catalog: founderJudgmentModels,
               founder_profile: profile,
               founder_input: input,
               seed_history: triageHistory,
+              output_contract:
+                "Return only JSON matching the requested schema. Keep the intervention, topPriority, doNotBecomeWorkToday, and nextActions specific to founder_input.",
             }),
           },
         ],

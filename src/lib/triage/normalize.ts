@@ -49,6 +49,9 @@ export function normalizeResult(value: Partial<TriageResult>): TriageResult {
     ...fallbackResult,
     ...value,
     source: "live_ai",
+    doNotBecomeWorkToday: value.doNotBecomeWorkToday?.length
+      ? value.doNotBecomeWorkToday
+      : fallbackResult.doNotBecomeWorkToday,
     signals: value.signals?.length
       ? value.signals.map(normalizeSignal)
       : fallbackResult.signals,

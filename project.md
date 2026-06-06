@@ -8,7 +8,7 @@ Founder Signal Triage
 
 Product vision:
 
-We are building Founder OS: a decision clarity layer for early-stage founders under signal overload.
+We are building Founder OS: a judgment protection layer for early-stage founders under signal overload.
 
 Hackathon wedge:
 
@@ -24,7 +24,7 @@ Pitch line:
 
 Most compressed positioning:
 
-> Founder OS helps early-stage founders decide what deserves to become work, using their own decision history to protect judgment under signal overload.
+> Founder OS helps high-ambition founders protect judgment under signal overload, using their own decision history to decide what should and should not become work.
 
 Target user:
 
@@ -44,13 +44,17 @@ Refined positioning:
 
 > We are not solving task management. We are helping founders keep judgment under signal noise.
 
+Sharper demo positioning:
+
+> This system is not trying to make ambitious founders conservative. It helps high-intensity founders move fast without letting vision, pressure, or exhaustion distort execution reality.
+
 Final positioning:
 
 > Founder OS is not another workspace, task manager, or AI coach. It starts as a decision clarity layer for solo and small-team early-stage founders operating under signal overload.
 
 Product category:
 
-Founder decision intelligence / pre-task decision triage.
+Founder judgment intelligence / pre-task decision triage.
 
 Long-term vision:
 
@@ -226,13 +230,289 @@ expert default framework -> founder operating profile -> signal triage -> patter
 
 Founder OS should not tell founders who they are. It should help founders build, calibrate, and run their own judgment system.
 
-Default framework:
+Founder OS begins with six default founder judgment models. These are not personality labels and should not be presented as fixed identities. They are operating defaults: pattern hypotheses the system can use before enough founder-specific history exists.
 
-- Signal reaction patterns: competitor-triggered pivot impulse, investor silence anxiety, negative user feedback spiral, advisor opinion over-weighting, positive feedback overconfidence, market report scope expansion.
-- Decision style patterns: over-analysis before reversible decisions, premature commitment under excitement, avoidance of uncomfortable stakeholder decisions, perfectionism before public release, low tolerance for ambiguity, over-indexing on external validation.
-- Execution patterns: scope creep near deadline, starting new work before closing the current loop, polishing instead of shipping, delaying delegation, doing low-leverage work personally, reopening decisions after they were already made.
-- Founder state patterns: sleep-deprived strategic doubt, anxious fundraising reaction, excitement-driven expansion, fatigue-driven meaning collapse, rejection-triggered repositioning, pressure-driven control tightening.
-- Ownership patterns: founder bottleneck, delegation resistance, agent distrust, excessive review ownership, unclear decision rights, team decision dependency.
+Each model includes:
+
+- A founder myth the audience can quickly understand.
+- A core belief that drives speed, focus, and risk.
+- Strengths the system should preserve.
+- Risk patterns the system should watch for.
+- A default intervention style.
+
+Product principle:
+
+> The system protects the founder's strongest operating mode from its own downside. It should not flatten founders into safer, slower versions of themselves.
+
+### Six Default Founder Models
+
+| Type | Model | Core belief | Default intervention | Demo fit |
+| --- | --- | --- | --- | --- |
+| 1 | The Visionary Builder | "If we move fast enough, we can bend reality." | Protect scope, evidence, and execution reality. | Best demo default |
+| 2 | The Analytical Strategist | "Better reasoning creates better companies." | Time-box analysis, force reversible decisions, separate unknown from unknowable. | Medium |
+| 3 | The Product Perfectionist | "If the product is truly great, the market will feel it." | Force shipping thresholds, separate polish from validation, define enough quality for this stage. | Good for creator/product audiences |
+| 4 | The Scrappy Survivor | "Cash, customers, and speed matter more than theory." | Protect strategic focus, distinguish revenue signal from distraction, prevent permanent founder-operator mode. | Realistic, less dramatic |
+| 5 | The Relationship-Driven Founder | "Companies are built through people, timing, and trust." | Separate signal from social validation, require commitment evidence, protect product truth. | Good fundraising story, can drift toward CRM |
+| 6 | The Technical Optimizer | "If the system is correct, scale will follow." | Validate before scaling, force customer evidence, separate engineering risk from market risk. | Clear for technical audiences |
+
+### Type 1: The Visionary Builder
+
+Keywords:
+
+- vision
+- speed
+- intensity
+- ambition
+- world-changing
+- overextension
+
+Public founder myth references:
+
+- Elon Musk-style intensity.
+- Steve Jobs-style product conviction.
+- Brian Chesky-style vision narrative.
+
+These references are not claims that the user is like these people. They are public shorthand for a founder operating myth investors and builders can quickly understand.
+
+Core belief:
+
+> If we move fast enough, we can bend reality.
+
+Strengths:
+
+- Strong vision.
+- Fast decisions.
+- Ability to attract talent and capital.
+- Willingness to attempt large outcomes.
+- High pressure tolerance.
+- Not easily stopped by ordinary obstacles.
+
+Risk patterns:
+
+- Overbuild.
+- Scope explosion.
+- All-in too early.
+- Refusal to acknowledge resource limits.
+- Reframing exhaustion as commitment.
+- Amplifying external signals into strategic inflection points.
+- Splitting between the great vision and what must ship today.
+
+Default intervention:
+
+> Protect scope, protect evidence, protect execution reality.
+
+Why this is the best demo model:
+
+- It has the strongest emotional tension: big vision, limited resources, external competition, team pressure, and founder intensity collide at once.
+- It shows that Founder OS is not for weak founders. It protects high-energy, high-ambition founders from being consumed by their own strongest drive.
+- It fits the VC question: can this founder move fast, learn, avoid repeated expensive mistakes, and keep judgment under uncertainty?
+- It connects naturally to the long-term Agentic Operating Layer: the problem is not lack of ideas, but converting ambition into a controlled operating system.
+
+Demo thesis:
+
+> Founder OS is not here to make the Visionary Builder conservative. It is here to help them move fast without letting vision pressure become uncontrolled scope.
+
+### Type 2: The Analytical Strategist
+
+Keywords:
+
+- logic
+- model
+- evidence
+- caution
+- analysis
+- precision
+
+Reference archetypes:
+
+- Patrick Collison-style clarity.
+- Reid Hoffman-style strategy.
+- Data-driven operator.
+
+Core belief:
+
+> Better reasoning creates better companies.
+
+Strengths:
+
+- Clear thinking.
+- Strong risk awareness.
+- Less easily pulled by emotion.
+- Able to handle complex trade-offs.
+- Sensitive to business model logic.
+
+Risk patterns:
+
+- Analysis paralysis.
+- Decision delay.
+- Over-modeling.
+- Waiting for more data.
+- Delaying reversible decisions.
+- Missing speed windows.
+
+Default intervention:
+
+> Time-box analysis, force reversible decisions, separate unknown from unknowable.
+
+### Type 3: The Product Perfectionist
+
+Keywords:
+
+- taste
+- craft
+- quality
+- detail
+- user experience
+- polish
+
+Reference archetypes:
+
+- Steve Jobs / Brian Chesky product taste.
+- High-craft product founder.
+
+Core belief:
+
+> If the product is truly great, the market will feel it.
+
+Strengths:
+
+- Strong product taste.
+- High UX sensitivity.
+- Ability to create quality and brand loyalty.
+- Strong craft standards.
+
+Risk patterns:
+
+- Shipping too slowly.
+- Over-polishing.
+- Packaging launch fear as quality standards.
+- Avoiding early exposure to rough versions.
+- Turning feedback into more polish instead of core value validation.
+
+Default intervention:
+
+> Force shipping thresholds, separate polish from validation, define what quality is enough for this stage.
+
+### Type 4: The Scrappy Survivor
+
+Keywords:
+
+- bootstrap
+- resource constraint
+- hustle
+- revenue
+- survival
+- pragmatism
+
+Reference archetypes:
+
+- Bootstrapped indie hacker.
+- Small profitable founder.
+- "Do things that don't scale" founder.
+
+Core belief:
+
+> Cash, customers, and speed matter more than theory.
+
+Strengths:
+
+- Strong reality contact.
+- Revenue focus.
+- Resource discipline.
+- Fast workaround ability.
+- Execution resilience.
+
+Risk patterns:
+
+- Over-short-term thinking.
+- Constant firefighting.
+- Avoiding long-term systems.
+- Being pulled by every customer request.
+- Weak strategic narrative.
+- Missing fundraising or expansion windows.
+
+Default intervention:
+
+> Protect strategic focus, distinguish revenue signal from distraction, prevent the founder from becoming the permanent operator.
+
+### Type 5: The Relationship-Driven Founder
+
+Keywords:
+
+- network
+- fundraising
+- stakeholders
+- narrative
+- trust
+- partnerships
+
+Reference archetypes:
+
+- Strong fundraiser.
+- Community builder.
+- Business founder.
+
+Core belief:
+
+> Companies are built through people, timing, and trust.
+
+Strengths:
+
+- Strong storytelling.
+- Fundraising and relationship building.
+- Ability to mobilize resources.
+- Sensitivity to people, timing, and opportunity.
+
+Risk patterns:
+
+- Being pulled off course by investor, advisor, or customer opinion.
+- Mistaking polite interest for real traction.
+- Networking more than executing.
+- Constantly changing narrative to please different audiences.
+- Letting external evaluation drive internal decisions.
+
+Default intervention:
+
+> Separate signal from social validation, require commitment evidence, protect product truth.
+
+### Type 6: The Technical Optimizer
+
+Keywords:
+
+- system
+- engineering
+- scalability
+- architecture
+- automation
+
+Reference archetypes:
+
+- Technical founder.
+- Infrastructure or developer-tool founder.
+
+Core belief:
+
+> If the system is correct, scale will follow.
+
+Strengths:
+
+- Technical depth.
+- Systems thinking.
+- Ability to build.
+- Automation instincts.
+- Long-term technical moat awareness.
+
+Risk patterns:
+
+- Premature optimization.
+- Early refactors.
+- Insufficient user validation.
+- Replacing business risk with engineering work.
+- Building a strong system nobody wants.
+
+Default intervention:
+
+> Validate before scaling, force customer evidence, separate engineering risk from market risk.
 
 Founder Operating Profile v1:
 
@@ -265,18 +545,19 @@ Demo profile:
 
 ```txt
 Founder Operating Profile v1
-Stage: MVP validation
-North Star: Validate onboarding clarity and first paid use case
-High-risk pattern: competitor-triggered pivot impulse
-Decision style: fast to react to external validation signals
-Intervention style: challenge premature pivots and protect focus
-Standing rule: no roadmap decision while exhausted or before user evidence is checked
+Default model: The Visionary Builder
+Stage: MVP validation / demo deadline pressure
+North Star: Prove the current wedge before expanding the vision
+High-risk pattern: vision-pressure scope expansion
+Decision style: fast, intense, high-conviction, highly responsive to large external signals
+Intervention style: protect scope, protect evidence, protect execution reality
+Standing rule: no roadmap expansion while exhausted or before user evidence is checked
 Pattern maturity: Validated
 ```
 
 Demo recommendation:
 
-> Based on your current North Star and validated competitor-triggered pivot pattern, this is not a pivot moment. It is an onboarding validation and scope-control moment.
+> This is not a vision-expansion moment. It is a proof-protection moment.
 
 Guardrails:
 
@@ -383,7 +664,7 @@ The product should recognize that exhaustion, anxiety, excitement, over-control,
 
 Examples:
 
-- Exhaustion plus competitor news can create pivot impulse.
+- Exhaustion plus competitor news can create vision expansion impulse.
 - Anxiety plus investor silence can create premature narrative changes.
 - Excitement plus one positive customer call can create overbuilding.
 - Stress plus team uncertainty can create over-control or delayed delegation.
@@ -451,10 +732,10 @@ Potential copy:
 Founder state is affecting decision quality.
 
 Detected:
-Exhaustion + pivot impulse
+Exhaustion + vision expansion impulse
 
 Rule:
-No irreversible roadmap decision from this state.
+No roadmap expansion from this state.
 ```
 
 Why it matters:
@@ -512,35 +793,38 @@ The UI should feel like a judgment intervention, not a dashboard.
 Preferred result order:
 
 ```txt
-1. Decision intervention
-   Before this becomes work, check the pattern.
+1. Pattern interruption
+   This looks like a Visionary Builder pressure moment.
 
-2. Pattern memory
-   You reacted this way before.
+2. Decision risk
+   The signal is real. The reaction may be amplified.
 
-3. Priority reset
-   Here is the one thing that deserves work today.
+3. Pattern memory
+   You have turned similar pressure into scope before.
 
-4. Do not do today
+4. Priority reset
+   This is a proof-protection moment, not a vision-expansion moment.
+
+5. Do not do today
    What should not become work.
 
-5. Next actions with ownership
+6. Next actions with ownership
    Founder / Team / Agent draft / System rule.
 
-6. Supporting triage evidence
+7. Supporting triage evidence
    Act Now / Monitor / Defer.
 ```
 
 Main product feeling:
 
-> This signal is real, but your reaction may be amplified. Do not make it work yet.
+> The vision is still valid. This specific reaction should not become work yet.
 
 ## Demo Goal
 
 The demo must show one core flow:
 
 ```txt
-Messy founder input -> signal triage -> pattern memory -> priority reset
+Messy founder input -> judgment risk -> pattern memory -> priority reset -> do not become work
 ```
 
 The key difference from Notion, Jira, Linear, and Todoist:
@@ -549,18 +833,22 @@ The key difference from Notion, Jira, Linear, and Todoist:
 
 ## Core Demo Scenario
 
+Founder model:
+
+> The Visionary Builder.
+
 Founder enters a messy daily update:
 
 > Investor A didn't reply for a week. Two users said onboarding is confusing. A competitor just launched an AI workflow feature. My teammate wants to add a dashboard before demo day. I'm exhausted but feel like we might need to pivot.
 
 The system should output:
 
-1. Signal classification.
-2. Priority level.
-3. State-amplified reaction risk.
-4. Pattern memory from historical data.
-5. One top priority.
-6. 3-4 concrete next actions.
+1. Pattern interruption: this is a Visionary Builder pressure moment.
+2. Decision risk: real external signals may be amplifying a scope-expansion reaction.
+3. Pattern memory: similar pressure previously triggered premature vision expansion.
+4. Priority reset: this is a proof-protection moment, not a vision-expansion moment.
+5. Do not become work today: pivot, dashboard, roadmap rewrite, and competitor reaction.
+6. 3-4 concrete next actions with timing and ownership.
 
 ## Key Requirements
 
@@ -572,13 +860,16 @@ The system should output:
 - The product should solve one specific problem: deciding what deserves to become work right now.
 - The prototype must show founder-specific decision memory, not just generic AI summarization.
 - The output must include one singular top priority, not a list of competing priorities.
+- The default demo model must be The Visionary Builder.
+- The output must show what should not become work today.
 
 ### Should Have
 
 - Clear input panel for messy founder updates.
-- Signal board showing classified signals.
+- Judgment intervention showing the founder model and current decision risk.
 - Pattern memory section with historical trace.
 - Priority reset section.
+- Do not become work today section.
 - 3-4 concrete next actions with timing.
 - Hardcoded fallback output so the demo does not depend on live AI.
 
@@ -631,7 +922,7 @@ Team: Teammate wants to add dashboard before demo -> Act Now / Freeze Scope
 Execution: Demo day deadline risk -> Act Now
 Investor: Investor A has not replied -> Monitor / Follow up tomorrow
 Market: Competitor launched AI workflow feature -> Defer / Review after demo
-Founder State: Exhaustion + pivot impulse -> Decision distortion risk
+Founder State: Exhaustion + vision expansion impulse -> Decision distortion risk
 ```
 
 ## State-Amplified Reaction Logic
@@ -647,9 +938,9 @@ Example:
 ```txt
 Signal: Competitor launched a new feature
 Signal type: Real external market signal
-Reaction: "Maybe we should pivot"
+Reaction: "Maybe we need to expand the vision now"
 Risk: State-amplified overreaction
-Recommendation: Do not make roadmap decisions while exhausted. Check user evidence first.
+Recommendation: Do not expand the roadmap while exhausted. Check user evidence first.
 ```
 
 Do not call signals fake.
@@ -664,7 +955,7 @@ Use precise language:
 
 Pattern memory is the core differentiator.
 
-The system should use pre-seeded founder history to detect repeated decision patterns.
+The system should use the selected founder model plus pre-seeded founder history to detect repeated decision patterns.
 
 Pattern memory is not AI remembering chat history. It is the system remembering structured decision history:
 
@@ -675,13 +966,14 @@ trigger -> state -> decision -> action -> outcome -> pattern
 Example:
 
 ```txt
-Pattern detected: Competitor-triggered pivot impulse
+Founder model: The Visionary Builder
+Pattern detected: Vision-pressure scope expansion
 
-This is the 3rd time competitor activity triggered a pivot impulse before user evidence was checked.
+This is the 3rd time large external pressure pulled the founder toward vision expansion before current proof was complete.
 
 Jan 12: Competitor launched -> considered pivot -> stayed course -> correct
 Mar 18: Market report -> expanded roadmap -> cut back after 5 days -> costly
-May 08: Advisor suggested enterprise pivot -> checked evidence -> SMB stayed correct
+May 08: Advisor suggested enterprise expansion -> checked evidence first -> correct
 ```
 
 The pattern output should include:
@@ -693,7 +985,7 @@ The pattern output should include:
 
 Example insight:
 
-> When competitors or advisors challenge your direction, you tend to question positioning before checking user evidence.
+> When large external signals challenge the current wedge, your Visionary Builder mode tends to expand the vision before checking whether the current proof is complete.
 
 ## Priority Reset
 
@@ -703,14 +995,16 @@ Example:
 
 ```txt
 Top priority today:
-Validate onboarding confusion with 3 users and freeze demo scope. No pivot decision today.
+Validate onboarding confusion with 3 users and freeze demo scope. No vision expansion or pivot decision today.
 ```
 
 This must be singular. Do not output 5 priorities.
 
-Strong demo output:
+Strong demo output for the Visionary Builder default model:
 
-> This is not a pivot moment. It is a scope-control and onboarding-validation moment.
+> This is a proof-protection moment, not a vision-expansion moment.
+
+The exact recommendation should change based on the selected founder judgment model and current input. Do not hardcode one demo sentence as the universal output.
 
 ## Next Actions
 
@@ -720,7 +1014,7 @@ Output 3-4 concrete actions with timing:
 1. Ask 3 users where onboarding breaks - today
 2. Tell teammate the dashboard is deferred until after demo - today
 3. Send Investor A follow-up - tomorrow
-4. No roadmap decision while exhausted - standing rule
+4. No roadmap expansion while exhausted - standing rule
 ```
 
 ## MVP Scope
@@ -728,24 +1022,27 @@ Output 3-4 concrete actions with timing:
 Core demo flow:
 
 ```txt
-Messy founder input -> signal triage -> pattern memory -> priority reset
+Messy founder input -> judgment risk -> pattern memory -> priority reset -> do not become work
 ```
 
 The prototype must show:
 
 1. Input panel for messy founder update.
-2. Signal classification across 6 categories.
-3. Priority status: `act_now`, `monitor`, `defer`, `ignore`.
-4. State-amplified reaction risk.
-5. Pattern memory from seeded founder history.
-6. One singular top priority.
-7. 3-4 concrete next actions.
+2. Selected founder model, defaulting to The Visionary Builder.
+3. State-amplified judgment risk.
+4. Pattern memory from seeded founder history.
+5. One singular top priority.
+6. Do not become work today.
+7. Signal classification across 6 categories as supporting evidence.
+8. 3-4 concrete next actions.
 
 Minimum interface:
 
 1. Input panel with textarea and `Triage today` button.
-2. Today's signal board showing classified signals.
-3. Pattern and priority panel showing pattern detected, pattern trace, today's top priority, and next actions.
+2. Judgment intervention panel showing founder model, decision risk, and the core reset.
+3. Pattern memory panel showing pattern detected and trace.
+4. Priority panel showing today's top priority, do-not-do list, and next actions.
+5. Supporting evidence panel showing classified signals.
 
 Do not build for the hackathon:
 
@@ -763,7 +1060,7 @@ Do not build for the hackathon:
 
 The demo only needs to prove:
 
-> This system remembers founder decision patterns and uses them to protect today's operating clarity.
+> This system remembers founder decision patterns and uses them to protect today's operating clarity without making ambitious founders slower or more conservative.
 
 ## Minimum Data Model
 
@@ -775,16 +1072,19 @@ Each historical entry:
 {
   "id": "entry_001",
   "date": "2026-01-12",
+  "founder_model": "visionary_builder",
   "input": "Competitor launched a major update. I feel like we need to pivot our positioning.",
   "signals": ["market", "founder_state"],
-  "reaction_type": "pivot_impulse",
+  "reaction_type": "vision_pressure_scope_expansion",
   "state_amplified": true,
   "decision": "defer",
   "action_taken": "No pivot. Scheduled user validation instead.",
   "outcome": "Correct. User feedback confirmed original direction.",
   "pattern_tags": [
+    "visionary_builder",
     "competitor_trigger",
-    "premature_pivot",
+    "vision_expansion",
+    "scope_expansion",
     "state_amplified_reaction"
   ]
 }
@@ -805,6 +1105,7 @@ Use 1-2 AI calls.
 Input:
 
 - Current founder text.
+- Selected founder model.
 - Signal categories.
 - Today's date.
 
@@ -812,6 +1113,11 @@ Output JSON:
 
 ```json
 {
+  "founder_model": "visionary_builder",
+  "judgment_risk": {
+    "label": "Visionary Builder pressure moment",
+    "risk": "Real external signals may be amplifying a scope-expansion reaction."
+  },
   "signals": [
     {
       "category": "product",
@@ -825,7 +1131,7 @@ Output JSON:
       "description": "Competitor launched an AI workflow feature",
       "priority": "defer",
       "state_amplified": true,
-      "related_tags": ["competitor_trigger", "premature_pivot"]
+      "related_tags": ["visionary_builder", "competitor_trigger", "vision_expansion", "scope_expansion"]
     }
   ]
 }
@@ -852,11 +1158,19 @@ Output JSON:
 
 ```json
 {
-  "top_priority": "Validate onboarding confusion with 3 users and freeze demo scope. No pivot decision today.",
+  "founder_model": "visionary_builder",
+  "intervention": "This is a proof-protection moment, not a vision-expansion moment.",
+  "top_priority": "Validate onboarding confusion with 3 users and freeze demo scope. No vision expansion today.",
+  "do_not_become_work_today": [
+    "Do not pivot because of competitor news.",
+    "Do not add the dashboard before demo day.",
+    "Do not rewrite the roadmap while exhausted.",
+    "Do not treat investor silence as proof the wedge is too small."
+  ],
   "pattern_detected": true,
   "pattern": {
-    "name": "Competitor-triggered pivot impulse",
-    "insight": "When competitors launch new features, you tend to question positioning before checking user evidence.",
+    "name": "Vision-pressure scope expansion",
+    "insight": "When large external signals challenge the current wedge, your Visionary Builder mode tends to expand the vision before checking whether the current proof is complete.",
     "trace": [
       {
         "date": "2026-01-12",
@@ -886,7 +1200,7 @@ Output JSON:
       "timing": "tomorrow"
     },
     {
-      "action": "No roadmap decision while exhausted",
+      "action": "No roadmap expansion while exhausted",
       "timing": "standing rule"
     }
   ]
@@ -907,15 +1221,19 @@ Investor A didn't reply for a week. Two users said onboarding is confusing. A co
 
 Expected output:
 
+- Founder model: The Visionary Builder.
+- Pattern interruption: this is a Visionary Builder pressure moment.
+- Decision risk: real external signals may be amplifying a scope-expansion reaction.
 - Product onboarding issue -> Act Now.
 - Team dashboard scope creep -> Act Now / Freeze Scope.
 - Execution demo risk -> Act Now.
 - Investor silence -> Monitor.
 - Market competitor launch -> Defer.
-- Founder state exhaustion + pivot impulse -> Decision distortion risk.
-- Pattern: competitor-triggered pivot impulse.
+- Founder state exhaustion + vision expansion impulse -> Decision distortion risk.
+- Pattern: vision-pressure scope expansion.
 - Top priority: validate onboarding + freeze scope.
-- Next actions: 3 users, defer dashboard, follow up tomorrow, no roadmap decision while exhausted.
+- Do not become work today: pivot, dashboard, roadmap rewrite, competitor reaction.
+- Next actions: 3 users, defer dashboard, follow up tomorrow, no roadmap expansion while exhausted.
 
 If the API fails, the fallback still demonstrates the product logic.
 
@@ -1011,7 +1329,7 @@ LLMs can structure messy founder language across domains and compare it against 
 
 Demo highlight:
 
-The system recognizes a competitor-triggered pivot impulse from past founder history and prevents it from becoming roadmap work today.
+The system recognizes a Visionary Builder scope-expansion pattern from past founder history and prevents it from becoming roadmap work today.
 
 Business model:
 

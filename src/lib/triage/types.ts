@@ -45,8 +45,47 @@ export type DecisionRecord = DecisionLoop & {
 
 export type PatternMaturity = "Default" | "Hypothesis" | "Validated" | "Operating Rule";
 
+export type FounderModelId =
+  | "visionary-builder"
+  | "analytical-strategist"
+  | "product-perfectionist"
+  | "scrappy-survivor"
+  | "relationship-driven"
+  | "technical-optimizer";
+
+export type FounderJudgmentModel = {
+  id: FounderModelId;
+  name: string;
+  keywords: string;
+  belief: string;
+  strengths: string;
+  riskPatterns: string;
+  interventionStyle: string;
+  standingRule: string;
+};
+
 export type FounderOperatingProfile = {
   version: string;
+  founderName: string;
+  founderRole: string;
+  founderDomain: string;
+  companyDescription: string;
+  operatingContext: string;
+  founderModelId: FounderModelId;
+  founderModelName: string;
+  founderModelBelief: string;
+  founderModelStrengths: string;
+  founderModelRisks: string;
+  modelSignals: string[];
+  sensitiveSignals: string[];
+  confirmedPatternName: string;
+  confirmedPatternSummary: string;
+  commonTriggers: string[];
+  activeGuardrails: string[];
+  founderGrowthGoal: string;
+  companyGoal: string;
+  decisionAnchor: string;
+  anchorRule: string;
   stage: string;
   northStar: string;
   highRiskPattern: string;
@@ -71,6 +110,8 @@ export type Ownership =
 
 export type TriageResult = {
   source: "live_ai" | "fallback";
+  founderModelName: string;
+  intervention: string;
   patternName: string;
   patternSummary: string;
   memoryInsight: string;
@@ -78,6 +119,7 @@ export type TriageResult = {
   decisionRiskReason: string;
   topPriority: string;
   priorityRationale: string;
+  doNotBecomeWorkToday: string[];
   signals: Signal[];
   history: HistoryEntry[];
   nextActions: NextAction[];
